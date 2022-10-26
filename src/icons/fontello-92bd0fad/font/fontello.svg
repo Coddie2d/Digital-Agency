@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="up" unicode="&#xe800;" d="M366 790l334-334q31-31 31-73t-31-74-74-31-73 31l-83 82 0-377q0-44-31-74t-73-30q-43 0-74 31t-31 73l0 377-82-82q-31-31-74-31t-74 31-31 74 31 73z" horiz-adv-x="731" />
+
+<glyph glyph-name="right" unicode="&#xe801;" d="M399 684q31 31 74 31t73-31l334-335-334-334q-30-30-73-30t-74 30q-31 31-31 74t31 74l82 82-377 0q-44 0-74 31t-30 73q0 44 31 74t73 31l377 0-82 82q-31 32-31 75t31 73z" horiz-adv-x="880" />
+
+<glyph glyph-name="left" unicode="&#xe802;" d="M776 454q43 0 73-31t31-74q0-43-30-73t-74-31l-377 0 82-82q32-30 32-74t-32-74q-30-30-73-30t-74 30l-334 334 334 335q31 31 74 31t73-31q32-30 32-73t-32-75l-82-82 377 0z" horiz-adv-x="880" />
+
+<glyph glyph-name="down" unicode="&#xe803;" d="M700 391q31-31 31-73t-31-74l-334-334-335 334q-31 31-31 74t31 73 74 32 74-32l82-82 0 377q0 43 31 73t74 31q43 0 73-31t31-73l0-377 83 82q31 32 73 32t74-32z" horiz-adv-x="731" />
+
+<glyph glyph-name="plus" unicode="&#xe804;" d="M786 439v-107q0-22-16-38t-38-15h-232v-233q0-22-16-37t-38-16h-107q-22 0-38 16t-15 37v233h-232q-23 0-38 15t-16 38v107q0 23 16 38t38 16h232v232q0 22 15 38t38 16h107q23 0 38-16t16-38v-232h232q23 0 38-16t16-38z" horiz-adv-x="785.7" />
+
+<glyph glyph-name="plus-1" unicode="&#xe805;" d="M729 454q44 0 74-31t31-73-31-73-74-30l-208 3 0-212q0-43-30-73t-75-31-73 31-30 73l3 212-212-3q-44 0-74 30t-30 73 30 73 74 31l212 0-3 209q0 42 30 73t73 31 75-31 30-73l0-209 208 0z" horiz-adv-x="834" />
+
+<glyph glyph-name="plus-2" unicode="&#xe806;" d="M911 462l0-223-335 0 0-336-223 0 0 336-335 0 0 223 335 0 0 335 223 0 0-335 335 0z" horiz-adv-x="928" />
+
+<glyph glyph-name="plus-3" unicode="&#xe807;" d="M408 443l228 0 0-173-228 0 0-231-179 0 0 231-229 0 0 173 229 0 0 219 179 0 0-219z" horiz-adv-x="636" />
+</font>
+</defs>
+</svg>

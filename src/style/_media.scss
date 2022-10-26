@@ -1,0 +1,280 @@
+$sizes: ("xs":320px, "sm":576px, "md":768px, "lg":992px, "xl":1200px);
+@mixin media($minmax, $media) {
+    @each $size, $resolution in $sizes {
+      @if $media == $size {
+        @media only screen and (#{$minmax}-width: $resolution) {
+          @content;
+        }
+      } 
+    }
+}
+@include media('minmax','xl'){
+
+    .header__circle{
+        top: 20%;
+        left: 80%;
+        transform: translate(100%,50%);
+    }
+}
+@include media('max','lg'){
+    .OurAwesomePortfolio__title{
+        max-width: 680px;
+    }
+    .header__right-icon{
+        left: 85% !important;
+        transform: translate(30%,-20%) !important;
+    }
+    .header__title{
+        font-size: 70px !important;
+    }
+    .header__subtitle{
+        font-size: 20px !important;
+    }
+    .header__circle{
+        top: 20%;
+        left: 80%;
+        transform: translate(100%,50%);
+    }
+    .triangle{
+        transform: translate(70%,0%) rotate(90deg);
+    }
+    .header__left{
+        margin: 0 30px !important;
+
+    }
+
+}
+@include media('max','md'){
+    .OurAwesomePortfolio .slick-slide{
+        margin: 0 0 !important;
+    }
+    .OurAwesomePortfolio__circle{
+        left: 75% !important;
+    }
+    .header__left{
+        padding-bottom: 70px;
+    }
+    .header__LeftRigthBlock{
+        display: block !important; 
+    }
+    .header__img{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .zap{
+        left: 10% !important;
+
+    }
+    .header__circle{
+        left: 70%;
+        top: auto;
+        transform: translate(0%,-50%);
+    }
+    .header__title{
+        font-size: 60px !important;
+    }
+    .header__subtitle{
+        font-size: 18px !important;
+    }
+    .header__right-icon{
+        left: 80% !important;
+        transform: translate(30%,-10%) !important;
+    }
+    .bestChoice__header{
+        display:block !important;
+    }
+    .bestChoice__title{
+        font-size: 46px !important;
+    }
+    .bestChoice__subtitle{
+        font-size: 18px !important;
+    }
+    .bestChoice__title,
+    .bestChoice__subtitle{
+
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+    .contactUs__inner{
+        display: block !important;
+        text-align: center;
+    }
+    .contactUs__title{
+        font-size: 50px !important;
+        margin: 0 20px 40px;
+        text-align: left;
+        line-height: 60px !important;
+    }
+    .contactUs__button{
+        display: flex;
+        margin-left: 20px;
+        padding: 10px 30px !important;
+        justify-content: flex-start;
+    }
+    .footer{
+        .footer__logo{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            padding-bottom: 40px;
+            .footer__h1{
+                font-size: 50px;
+            }
+        }
+        display: block !important;
+        margin: 0 auto !important; 
+        .footer__links{
+            flex-direction: column;
+            display: flex;
+            margin: 0 auto; 
+            padding-bottom: 40px;
+            .footer__link{
+                padding-bottom: 40px;
+                font-size: 18px;
+                margin: 0 auto;
+            }
+            .footer__link:last-child{
+                padding-bottom: 0px;
+            }
+        }
+        
+        .footer__rightsReserved{
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+        }
+     
+    }
+    .slick-prev{
+        z-index: 1;
+        left: 50% !important;
+        transform: translate(-50%, 990%);
+    }
+    .slick-next{
+        z-index: 1;
+        left: 50% !important;
+        transform: translate(-50%, 990%);
+        right: 0px !important;
+        padding-left: 50px;
+    }
+    .OurAwesomePortfolio__image{
+       
+        max-width: 100%;
+        height: auto;
+    }
+    .slick-prev:before, 
+    .slick-next:before{
+        font-size: 30px;
+        color: antiquewhite;
+    }
+}   
+
+@include media('max','sm'){
+    .OurAwesomePortfolio__title{
+        font-size: 42px !important;
+        max-width: 500px;
+    }
+}
+.OurAwesomePortfolio .slick-slide{
+    margin: 0 0 !important;
+}
+
+@media (max-width:800px) {
+    .header__nav{
+        justify-content: space-between !important;
+        padding: 30px 50px !important;
+    }
+    .header__nav-button{
+        display: none;  
+    }
+    .header__burgerMenu{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        position: relative;
+        display: block;
+        border-radius:5px;
+        z-index: 3;
+        transform: rotate(180deg);
+    }
+    .header__burgerMenu span,
+    .header__burgerMenu::before,
+    .header__burgerMenu::after{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 1s ease 0s;
+        background-color: #F1CDB3;
+        
+    }
+    .header__burgerMenu::before,
+    .header__burgerMenu::after{
+        content: "";
+    }
+    .header__burgerMenu::before{
+        top: 0;
+        width: 35px;
+    }
+    .header__burgerMenu::after{
+        bottom: 0;
+        width: 15px;
+    }
+    .header__burgerMenu span {
+        top: 50%;
+        transform: scale(1) translate(0px,-50%);
+    }
+    .header__nav-links{
+        position: absolute;
+        left: 50%;
+        top:20%;
+        transform: translate(-50%,0%);
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        
+    }   
+    .header__link{
+        margin: 0 !important;
+        font-size: 40px;
+    }
+    .navBody{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translate(-100%,0px);
+        background-color: rgba(0,0,0,0.9);
+        transition: all 0.4s ease 0;
+        z-index: 2;
+        overflow-y: hidden;
+    }
+    .header__burgerMenu.active span{
+        transform: scale(0) translate(0px,-50%);
+    }
+    .header__burgerMenu.active::before{
+        top:50%;
+        transform: rotate(-45deg) translate(0px,-50%);
+        
+    }
+    .header__burgerMenu.active::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px,50%);
+    
+    }
+    .navBody.active{
+        transform: translate(0px,0%);
+    }   
+    .navButtons {
+        font-size: 50px;
+        padding-bottom: 10px;
+    }
+    .navButtons::before{
+        bottom: 20px;
+        height: 5px;
+    }
+
+}
+
